@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 90px auto;
+    grid-template-rows: 60px auto;
+    grid-template-areas: "header header" "menu container";
+    transition: all .3s ease;
+}
+
+.container.active{
+    grid-template-columns: 300px auto; 
+}
+
+/*HEADER*/
+.header{
+    grid-area: header;
+    background: white;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+    grid-template-areas: "logo search buttons";
+}
+
+.header .container-logo{
+    grid-area: logo;
+    display: flex;
+    align-items: center;
+}
+
+.header .container-logo .buttonMenu{
+    border: none;
+    padding: 10px;
+    background: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.header .container-logo .buttonMenu:hover{
+    background: #E7E7E7;
+}
+
+.header .container-logo .logo{
+    padding: 7px 12px;
+    position: relative;
+    font-size: 20px;
+    top: 2px;
+}
+
+.header .container-search{
+    grid-area: search;
+    display: flex;
+    align-items: center;
+}
+
+.header .container-search input{
+    min-width: 60%;
+    padding: 0 15px;
+    height: 35px;
+    line-height: 35;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.header .container-buttons{
+    grid-area: buttons
+}
+
+.side-menu{
+    grid-area: menu;
+    background: #ccc;
+}
+
+.main{
+    grid-area: container;
+    background: #414141;
+}

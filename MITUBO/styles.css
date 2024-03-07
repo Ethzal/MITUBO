@@ -1,0 +1,67 @@
+/*INDEX*/
+
+.mainImg{
+    background-image: url("Mitubo icon0.png");
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -135px;
+    margin-left: -135px;
+}
+
+.mainImg:hover{
+    background-image: url("Mitubo icon1.png");
+}
+
+/*REGISTER*/
+.registerForm{
+    margin: 20px auto;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1.mitubo{
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.registerButton{
+    background-color: #fab6ff;
+    border-color: #fab6ff;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 40px;
+    width: 77%;
+    margin-bottom: 20px;
+}
+
+.controls{
+  width: 70%;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 5px;
+  margin-bottom:  16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.controls:focus{
+  outline: none !important;
+  border: 3px solid #fab6ff;
+}
+
+/*PREFERENCES*/
+
+.preferences{
+    background-image: url('background.jpg');
+    background-size: cover;
+}
